@@ -1,0 +1,93 @@
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;1,400&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: content-box;
+            font-family: 'Nunito', sans-serif;
+        }
+        /* Thanh scrollbar */
+    ::-webkit-scrollbar {
+        width: 0px;
+        background: linear-gradient(white); 
+        }
+    ::-webkit-scrollbar-thumb {
+        background: linear-gradient(#95a5a6, #bdc3c7);
+        border-radius: 10px;
+       }
+       h1 {
+            color: gray;
+            font-weight: bold;
+        }
+    /* End scrollbar */
+        .container-fluid {
+            padding: 0 !important;
+            padding-top: 100px !important;
+        }
+        .box-view {
+            overflow: hidden;
+            width: 80%;
+            margin: auto;
+            
+            display: grid !important;
+            grid-template-columns: repeat(4, 25%);
+        }
+        article {
+            height: 300px;
+            position: relative !important;
+            overflow: hidden;
+        }
+        .frame-img {
+            width: 100%;
+            height: 194.8px;
+            overflow: hidden;
+            
+        }
+        .frame-img img {
+            width: 100%;
+            height: 100%;
+        }
+        ul {
+            list-style-type: none;
+            height: 50%;
+            width: 91%;
+
+            display: flex;
+            flex-direction: column;
+
+            padding: 0px 10px;
+            transition: all .5s;   
+
+        }
+      
+        article:hover  ul {
+            position: absolute;
+            margin-top: -24%;
+
+            transition: all 1s;
+            background-color: white;
+
+            overflow: scroll;
+            opacity: .9;
+        }
+
+        li span {
+            margin-right: 10px
+        }
+        li span:after {
+            content: ' VND';
+        }
+
+        li:first-child {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+        li:first-child h5 {
+            font-weight: bold;
+            color: rgb(138, 138, 138)
+        }
+        li:first-child span {
+            font-size: 14px;
+            font-weight: bold;
+            color: gold
+        }
